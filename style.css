@@ -1,0 +1,328 @@
+/* Reset e Configurações Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222222;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho e Menu */
+.cabecalho {
+  background-color: #1b263b;
+  color: #ffffff;
+  padding: 18px 0;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.sinal-verde {
+  color: #2ecc71;
+  margin-right: 6px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #e0e1dd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* Efeito :hover nos links do menu */
+.menu a:hover {
+  background-color: #f1c40f;
+  color: #1b263b;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+  background-color: #2b3a55;
+  color: #ffffff;
+  padding: 70px 0;
+  border-bottom: 5px solid #f1c40f;
+}
+
+.hero-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-texto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #e0e1dd;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #f1c40f;
+  color: #1b263b;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 2px solid #f1c40f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito :hover no botão principal */
+.btn-cta:hover {
+  background-color: transparent;
+  color: #f1c40f;
+}
+
+/* Card ilustrativo na Hero Section (com position relative e absolute) */
+.hero-imagem {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-sinalizacao {
+  position: relative;
+  background-color: #1b263b;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #415a77;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 300px;
+}
+
+.semaforo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background-color: #111111;
+  padding: 16px;
+  border-radius: 10px;
+  width: 70px;
+  margin: 0 auto 18px auto;
+  border: 2px solid #555555;
+}
+
+.luz {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: block;
+}
+
+.vermelha { background-color: #e74c3c; }
+.amarela { background-color: #f1c40f; }
+.verde { background-color: #2ecc71; }
+
+/* Seção Informativa */
+.secao-causa {
+  padding: 65px 0;
+  background-color: #ffffff;
+}
+
+.secao-causa h2,
+.secao-tabela h2,
+.secao-midia h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1b263b;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #555555;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+.cards-flex {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 260px;
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  border-top: 5px solid #2b3a55;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Efeito :hover nos cards */
+.card:hover {
+  border-top-color: #f1c40f;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #1b263b;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #444444;
+}
+
+/* Seção Tabela */
+.secao-tabela {
+  padding: 65px 0;
+  background-color: #f1f3f5;
+}
+
+.tabela-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+thead {
+  background-color: #1b263b;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 15px 18px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Efeito :hover nas linhas da tabela */
+tbody tr:hover {
+  background-color: #fff9db;
+}
+
+/* Seção de Mídia */
+.secao-midia {
+  padding: 65px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid #1b263b;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 415px;
+  border: none;
+  display: block;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  padding-top: 45px;
+  position: static;
+}
+
+.rodape-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #415a77;
+}
+
+.rodape-info h3 {
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.rodape-links h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.rodape-links ul {
+  list-style: none;
+}
+
+.rodape-links li {
+  margin-bottom: 6px;
+}
+
+.rodape-links a {
+  color: #e0e1dd;
+  text-decoration: none;
+}
+
+.rodape-links a:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+.rodape-base {
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.9rem;
+  background-color: #0d1b2a;
+}
